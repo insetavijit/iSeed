@@ -35,7 +35,9 @@ body{
     @each $PUB_COLORS_TYPES in $PUBLIC_COLORS_TYPES {
         // usable color class ( the original color no edit )
         @each $deep in $SCALE {
-            .color-#{$PUB_COLOR}-#{$PUB_COLORS_TYPES}--#{$deep}{
+            .color-#{$PUB_COLOR}-#{$PUB_COLORS_TYPES}--#{$deep},
+            .c-#{$PUB_COLOR}-#{$PUB_COLORS_TYPES}--#{$deep},
+            {
                color: var(--color-#{$PUB_COLOR}-#{$PUB_COLORS_TYPES}--#{$deep})!important;
             }
         }
@@ -45,8 +47,8 @@ body{
         .c-#{$PUB_COLOR}-t--#{$deep}{
            color: var(--color-#{$PUB_COLOR}-transparant--#{$deep})!important;
         }
-        .color-#{$PUB_COLOR}-transparant--#{$deep}-bg,
-        .c-#{$PUB_COLOR}-t--#{$deep}-bg{
+        .bg-#{$PUB_COLOR}-transparant--#{$deep},
+        .bg-#{$PUB_COLOR}-t--#{$deep}{
            background-color: var(--color-#{$PUB_COLOR}-transparant--#{$deep})!important;
         }
     }
