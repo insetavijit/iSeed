@@ -1,0 +1,43 @@
+//
+    _______________________________________________________
+    @TEMPLATE NAME : navBar
+    @PACKAGE : #{projectName}
+    @SUPPORT : <https://twitter.com/inset_>
+    _______________________________________________________
+    CREATED ON : 2018-08-24 22:50:57
+    GMT+0530 (India Standard Time)
+    CREATED BY : AVIJIT SARKAR <https://twitter.com/inset_>
+    _______________________________________________________
+//  
+
+
+// NAVIGATION BAR STRARING : TOP 01
+section.bg-primary.tst
+    nav.navbar.navbar-expand-lg
+        .col.col-md-3.tst
+            h3.m-0.tst oSeed v1.0.0
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            i.fas.fa-bars
+        #navbarSupportedContent.collapse.navbar-collapse
+            .container
+                .row.tst
+                    .col-md-8.tst
+                        .formWrapper.tst
+                            form.form-inline.my-2.my-lg-0.w-100.tst
+                                input.form-control.form-control-sm.mr-sm-2.w-100(type='search', placeholder='Search', aria-label='Search')
+                    .col-md-4.tst
+                        ul.navbar-nav.mr-auto.float-right#userProfileActions.tst
+                            li.px-1.img-icon.ico.tst
+                                i.fas.fa-bell
+                                span.badge.badge-warning 05
+                            li.px-1.img-icon.tst
+                                img.rounded#userProfileImg(data-src="holder.js/30x30?text=30x", alt="", srcset="")
+                                #userProfileActionMenu.hide.popups.rounded(data-position="bottom-end")
+                                    ul.p-3.no-df
+                                        li Profile Settings
+                                        li Massages box
+                                        li Requests
+                                        li
+                                            hr
+                                        li logout
+// NAVIGATION BAR [ENDS] : TOP 01
