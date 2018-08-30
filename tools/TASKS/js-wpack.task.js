@@ -42,7 +42,7 @@ gulp.task("js:min", gulp.parallel((done)=>{
 }));
 // TODO: genarate all js file in spacific folder . and genarate a main -bundil file .js.min version as well as full version
 gulp.task("debug:js",gulp.parallel((done)=>{
-    js(done , false , true);
+    js(done , false);
 }));
 //
 gulp.task("js:dev",gulp.parallel((done)=>{
