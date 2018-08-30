@@ -1,7 +1,21 @@
 {
-    "sft":{
-        "libs":{
-            "json":"vl.json"
+    "sft": {
+        "libs": {
+            "js": [
+                "node_modules/jquery/dist/jquery.min.js",
+                "node_modules/jquery.appear/jquery.appear.js",
+                "node_modules/holderjs/holder.min.js",
+
+                "node_modules/popper.js/dist/umd/popper.min.js",
+                "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
+            "css": [
+                "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "fonts": [
+                "node_modules/@fortawesome/fontawesome-free**/webfonts/*",
+                "node_modules/@fortawesome/fontawesome-free**/css/all.min.css"
+            ]
         }
     }
 }
