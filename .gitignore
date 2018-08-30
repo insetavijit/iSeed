@@ -1,3 +1,52 @@
+
+
+
+#autoGens
+dist
+.bin
+# esc temp files:
+*.tmp.*
+*.temp.*
+
+
+
+
+
+
+# Only for Master branch WE Need to have package.json file
+# else we can genarate it with insGen
+# it will be Created by AutoGen
+
+
+
+package-lock.json
+
+vl.json
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Logs
 logs
 *.log
@@ -59,3 +108,7 @@ typings/
 
 # next.js build output
 .next
+<<<<<<< HEAD
+=======
+.next
+>>>>>>> f4409394b34f7cb449d1fca8b29c5df5d090a55b
