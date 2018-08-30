@@ -1,5 +1,5 @@
 {
-  "name": "seedlist",
+  "name": "iseed",
   "main": "insGen.js",
   "scripts": {
     "test": "mocha ./test/**/**",
@@ -25,5 +25,20 @@
     "mocha": "^5.2.0",
     "del": "^3.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "description": "",
+  "version": "1.0.0",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insetavijit/iSeed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/insetavijit/iSeed/issues"
+  },
+  "homepage": "https://github.com/insetavijit/iSeed#readme"
 }
