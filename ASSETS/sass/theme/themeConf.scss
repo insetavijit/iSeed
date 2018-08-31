@@ -4,6 +4,19 @@ body{
    background-color:  $BACKGROUND ;
 }
 
+
+// mdc colors stuff:
+
+$mdc-theme-primary: $PRIMARY_COLOR;
+$mdc-theme-secondary: $SECONDARY_COLOR;
+
+$btn-primary-ripple-color : white ;
+
+//its importan to load mdc-theme after setting variables
+// for mdc
+@import "@material/theme/mdc-theme";
+
+
 // /*
 // =============================================================
 //     CREATED ON :2018-08-05 14:22:23
@@ -29,15 +42,17 @@ body{
     }
 }
 
-
+.color-primary{
+    color: $PRIMARY_COLOR !important ;
+}
+.color-secondary{
+    color: $SECONDARY_COLOR !important ;
+}
 
 @each $PUB_COLOR in $PUBLIC_COLOR_SCHEMS{
     @each $PUB_COLORS_TYPES in $PUBLIC_COLORS_TYPES {
-        // usable color class ( the original color no edit )
         @each $deep in $SCALE {
-            .color-#{$PUB_COLOR}-#{$PUB_COLORS_TYPES}--#{$deep},
-            .c-#{$PUB_COLOR}-#{$PUB_COLORS_TYPES}--#{$deep},
-            {
+            .color-#{$PUB_COLOR}-#{$PUB_COLORS_TYPES}--#{$deep}{
                color: var(--color-#{$PUB_COLOR}-#{$PUB_COLORS_TYPES}--#{$deep})!important;
             }
         }

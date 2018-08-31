@@ -4,6 +4,16 @@
 // genarating classes based on var ( for theme color and stuff)
 @import "themeConf";
 // all btns and btns related styles are here
+// MDC -- dircet intigration :
+@import "@material/drawer/mdc-drawer";
+// mdc-- custom intigration
+// customised version of mdc-card
+@import "cards";
+//btns
 @import "btns";
+
+
+
+// :: CUSTOM SCTIPTS - HELPERS 
 // extra util classes
 @import "utils";

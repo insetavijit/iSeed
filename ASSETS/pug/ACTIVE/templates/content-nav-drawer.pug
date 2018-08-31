@@ -1,0 +1,36 @@
+// naviGation Drawer | MDC |
+aside.float-right.mdc-drawer--temporary.demo-drawer.mdc-drawer
+    nav.mdc-drawer__drawer(dir="rtl")
+        .dGradient.h-100(dir="ltr")
+            .container.h-100
+                .row.align-items-center.h-100
+                    .col
+                        section.text-center
+                            header
+                                img.rounded(data-src="holder.js/64x64", alt="")
+                                form#usrLoginfrm(action="#", method="post")
+                                    .fG
+                                        label(for="")
+                                        input.form-control.form-control-sm(type="email", name="userEmail" placeholder="emilId : jon@doe.glob")
+                                    .fG
+                                        label(for="")
+                                        input.form-control.form-control-sm(type="password", name="userPass" placeholder="password")
+                                    
+                                    .fG.my-2 
+                                        input#t_radio_terms(type="hidden", name="agreeWithTerms" value=0)
+                                        i.mx-2.fas.fa-square.insUtil_checkbox.pointer(data-target="t_radio_terms")
+                                        //- i.mx-2.fas.fa-check-square
+                                        small
+                                            em I Agree with the 
+                                                a(href="#") tarms and Conditions .
+
+                                    .my-2
+                                        .contaienr
+                                            .row
+                                                .col
+                                                    .btns.btns-secondary Register
+                                                .col
+                                                    input.btns.btns-primary-light(type="submit", value="login")
+                            footer           
+                                small
+                                    em Lorem, ipsum dolor &copy; 2018-2025.

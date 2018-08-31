@@ -1,0 +1,26 @@
+@import "@material/card/mdc-card";
+@import "@material/elevation/mdc-elevation";
+
+.elev {
+    cursor: pointer;
+    &:hover {
+        @extend .mdc-elevation--z19;
+    }
+}
+
+.card-elev {
+    @extend .mdc-card;
+    @extend .elev;
+}
+
+.dGradient {
+    @extend .mdc-theme--text-primary-on-dark;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+    background-blend-mode: multiply; 
+    .fG{
+        input{
+            background: #1b1a1ac9 ;
+            border-color:#10101082 ; 
+        }
+    }
+}

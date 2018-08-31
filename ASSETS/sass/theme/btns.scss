@@ -1,14 +1,53 @@
-/*
-=============================================================
-    CREATED ON :2018-08-15 01:10:44
-    GMT+0530 (India Standard Time)
-    CREATED BY : AVIJIT SARKAR <https://twitter.com/inset_>
--------------------------------------------------------------
-    btns List
-    .btns 
-    
-=============================================================
-*/
-.btns{
+
+@import "@material/button/mdc-button.scss";
+
+.pointer{
     cursor: pointer;
+}
+
+.btns-primary {
+    @extend .mdc-button ;
+    padding: 0 1em;
+    @extend .mdc-theme--primary-bg !optional;
+    @extend .mdc-theme--text-primary-on-dark;
+    @include mdc-states( white );
+    @extend .up-4;
+}
+.btns-primary-light{
+    @extend .mdc-button ;
+    padding: 0 1em;
+    // @extend .mdc-theme--primary-light-bg !optional;
+    @extend .mdc-theme--text-primary-on-light;
+    @include mdc-states( white ); 
+    // background: var( --color-primary-light--9 ) !important;
+    &:hover{
+        @extend .bg-primary-t--1;
+    }
+}
+.btns-secondary {
+    @extend .mdc-button ;
+    padding: 0 1em;
+    @extend .mdc-theme--secondary-bg !optional;
+    @extend .up-4;
+    // @extend .mdc-theme--text-primary-on-secondary !optional;
+    @extend .mdc-theme--text-secondary-on-light;
+    @include mdc-states(white);
+    
+}
+.btns-secondary-light {
+    @extend .mdc-button ;
+    padding: 0 1em;
+    @extend .mdc-theme--text-secondary-on-light;
+    // @extend .mdc-theme--text-primary-on-secondary !optional;
+    @include mdc-states(white);
+    &:hover{
+        @extend .bg-secondary-t--1;
+    }
+}
+
+.up-4{
+    @extend .mdc-elevation--z2 ;
+}
+.btns-rounded {
+    @include mdc-button-corner-radius( 25px);
 }

@@ -12,32 +12,28 @@
 
 
 // NAVIGATION BAR STRARING : TOP 01
-section.bg-primary-t--10.tst
+section.mdc-theme--primary-bg.tst
     nav.navbar.navbar-expand-lg
         .col.col-md-3.tst
-            h3.m-0.tst oSeed v1.0.0
-        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            h3.m-0.color-primary-light--9.tst oSeed v1.0.0
+        button.navbar-toggler.mdc-button.drawer-mdc
             i.fas.fa-bars
         #navbarSupportedContent.collapse.navbar-collapse
             .container
                 .row.tst
                     .col-md-8.tst
                         .formWrapper.tst
-                            form.form-inline.my-2.my-lg-0.w-100.tst
-                                input.form-control.form-control-sm.mr-sm-2.w-100(type='search', placeholder='Search', aria-label='Search')
+                            include nav-search.pug
                     .col-md-4.tst
                         ul.navbar-nav.mr-auto.float-right#userProfileActions.tst
-                            li.px-1.c-primary-light--9.ico.tst
-                                i.fas.fa-bell
+                            // notigication
+                            li.btns.mdc-button.ico
+                                i.fas.fa-bell.color-primary-light--9 
                                 span.badge.badge-warning 05
+                            //profile - img
                             li.px-1.img-icon.tst
-                                img.rounded#userProfileImg(data-src="holder.js/30x30?text=30x", alt="", srcset="")
-                                #userProfileActionMenu.hide.popups.rounded(data-position="bottom-end")
-                                    ul.p-3.no-df
-                                        li Profile Settings
-                                        li Massages box
-                                        li Requests
-                                        li
-                                            hr
-                                        li logout
+                                img.rounded#userProfileImg(data-src="holder.js/35x35?text=64x", alt="", srcset="")
+                            // mdc-drawer : btn
+                            li.mdc-button.drawer-mdc.color-primary-light--9 
+                                i.fas.fa-bars
 // NAVIGATION BAR [ENDS] : TOP 01

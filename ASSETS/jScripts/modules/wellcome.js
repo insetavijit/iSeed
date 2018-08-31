@@ -1,4 +1,6 @@
 
 
 
-console.log("iSeed - v1.0 ");
+// jQuery(document).ready(($)=>{
+   
+// });
