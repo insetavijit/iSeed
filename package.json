@@ -5,19 +5,22 @@
         "test": "mocha ./test/**/**",
         "start": "npm i && npm test && npm i"
     },
-    "seedlist": {
-        "author": "avijit sarkar <https://twitter.com/inset_>",
-        "license": "ISC",
-        "version": "1.0.0",
-        "description": "Collection of my Seed Projects -inset",
-        "repository": {
-            "type": "git",
-            "url": "git+https://github.com/insetavijit/seedlist.git"
-        },
-        "bugs": {
-            "url": "https://github.com/insetavijit/seedlist/issues"
-        }
+    "description": "kickstarter projects ( seed projects ) for devlopers",
+    "version": "1.0.0",
+    "directories": {
+        "test": "test"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/insetavijit/iSeed.git"
+    },
+    "author": "avijit sarkar",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/insetavijit/iSeed/issues"
+    },
+    "homepage": "https://github.com/insetavijit/iSeed#readme",
+
     "devDependencies": {
         "chai": "^4.1.2",
         "glob": "^7.1.2",
