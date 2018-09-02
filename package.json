@@ -55,6 +55,7 @@
     "holderjs": "^2.9.4",
     "jquery": "^3.3.1",
     "jquery.appear": "^1.0.1",
+    "material-components-web": "^0.38.0",
     "popper.js": "^1.14.4"
   }
 }
